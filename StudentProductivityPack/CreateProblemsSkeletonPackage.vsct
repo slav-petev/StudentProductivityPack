@@ -63,7 +63,7 @@
           If you do not want an image next to your command, remove the Icon node /> -->
       <Button guid="guidCreateProblemsSkeletonPackageCmdSet" id="CreateProblemsSkeletonId" priority="0x0100" type="Button">
         <Parent guid="guidCreateProblemsSkeletonPackageCmdSet" id="StudentProductivityMenuGroup" />
-        <Icon guid="guidImages" id="bmpPic1" />
+        <Icon guid="createSolutionSkeleton" id="createSolutionSkeleton1" />
         <Strings>
           <ButtonText>Create Solution Skeleton</ButtonText>
         </Strings>
@@ -78,7 +78,8 @@
             inside a button definition. An important aspect of this declaration is that the element id
             must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
       <Bitmap guid="guidImages" href="Resources\CreateProblemsSkeleton.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>
-    </Bitmaps>
+      <Bitmap guid="createSolutionSkeleton" href="Resources\Icons\GenerateSiolution.ico" usedList="createSolutionSkeleton1"/>  
+  </Bitmaps>
   </Commands>
 
   <Symbols>
@@ -99,6 +100,10 @@
       <IDSymbol name="bmpPicX" value="4" />
       <IDSymbol name="bmpPicArrows" value="5" />
       <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+
+    <GuidSymbol name="createSolutionSkeleton" value="{FDD6614E-F4EE-46E0-998E-3ADC390D6459}">
+      <IDSymbol name="createSolutionSkeleton1" value="1"/>
     </GuidSymbol>
   </Symbols>
 </CommandTable>
