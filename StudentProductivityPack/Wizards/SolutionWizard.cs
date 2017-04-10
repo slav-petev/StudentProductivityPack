@@ -47,9 +47,6 @@ namespace StudentProductivityPack.Wizards
             {
                 if (string.IsNullOrWhiteSpace(tbxSolutionName.Text))
                 {
-                    //MessageBox.Show(Messages.Error.SOLUTION_MUST_HAVE_NAME,
-                    //    Messages.Error.CANNOT_CREATE_SOLUTION_TITLE,
-                    //    MessageBoxButtons.OK, MessageBoxIcon.Error);
                     DialogBoxFactory.ShowErrorDialog(
                         Messages.Error.CANNOT_CREATE_SOLUTION_TITLE,
                         Messages.Error.SOLUTION_MUST_HAVE_NAME);
@@ -68,7 +65,7 @@ namespace StudentProductivityPack.Wizards
                 }
                 if (string.IsNullOrWhiteSpace(tbxProjectNames.Text))
                 {
-                    var userChoice = DialogBoxFactory.ShowQuestionDialog(
+                    var userChoice = DialogBoxFactory.ShowWarningDialog(
                         Messages.Warning.EMPTY_SOLUTION_CREATION_TITLE,
                         Messages.Warning.EMPTY_SOLUTION_CREATION_MESSAGE);
                     if (userChoice == DialogResult.No)
